@@ -1,5 +1,6 @@
 import pygame, Classes
 from Round import *
+from End_Screen import *
 from pygame.locals import *
 
 #Player1_Colours = [(194,192,68),(204,179,63),(179,141,68),(204,133,78),(194,98,76)]
@@ -25,4 +26,4 @@ while True:
     
     while Player1.Score <3 and Player2.Score <3:
         Round(Screen, Backup, Player1, Player2)
-    Final(Screen, Player1, Player2)
+    End_Screen(Screen, Player1, Player2)
