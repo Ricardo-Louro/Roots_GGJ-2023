@@ -1,4 +1,5 @@
 import pygame, Classes
+from Title_Screen import *
 from Round import *
 from End_Screen import *
 from pygame.locals import *
@@ -22,7 +23,7 @@ while True:
     Player1 = Classes.Player("LEFT", Player1_Colours, -0.5)
     Player2 = Classes.Player("RIGHT", Player2_Colours, 0.5)
 
-    Main_Menu(Screen, Player1)
+    Title_Screen(Screen, Player1)
     
     while Player1.Score <3 and Player2.Score <3:
         Round(Screen, Backup, Player1, Player2)

@@ -33,6 +33,6 @@ The first to three points wins!
 
 INSTALATION:
 You will need Pygame to launch the game: https://www.pygame.org/wiki/GettingStarted
-Launch the game from Main.py to play!
+Launch the game from Launcher.py to play!
 
 ------------------------------------------------------------------------------------------------------
