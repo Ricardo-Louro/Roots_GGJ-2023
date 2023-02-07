@@ -1,5 +1,6 @@
 import pygame, Classes
 from Title_Screen import *
+from Main_Menu import *
 from Round import *
 from End_Screen import *
 from pygame.locals import *
@@ -19,12 +20,13 @@ pygame.display.set_caption("ROOTS - GGJ 2023")
 pygame.mixer.music.play(-1,0,1000)
 pygame.mixer.music.set_volume(0.5)
 
+Title_Screen(Screen)
+
 while True:
     Player1 = Classes.Player("LEFT", Player1_Colours, -0.5)
     Player2 = Classes.Player("RIGHT", Player2_Colours, 0.5)
-
-    Title_Screen(Screen, Player1)
     
+    #Main_Menu(Screen, Player1)
     while Player1.Score <3 and Player2.Score <3:
         Round(Screen, Backup, Player1, Player2)
     End_Screen(Screen, Player1, Player2)
