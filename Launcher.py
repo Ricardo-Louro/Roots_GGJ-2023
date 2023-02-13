@@ -27,6 +27,7 @@ while True:
     Player2 = Classes.Player("RIGHT", Player2_Colours, 0.5)
     
     #Main_Menu(Screen, Player1)
+    
     while Player1.Score <3 and Player2.Score <3:
         Round(Screen, Backup, Player1, Player2)
     End_Screen(Screen, Player1, Player2)
